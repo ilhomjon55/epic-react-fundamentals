@@ -26,7 +26,7 @@ function UsernameForm({onSubmitUsername}) {
     onSubmitUsername(userName)
   }
 
-  function handleSubmit(evt) {
+  function handleChange(evt) {
     const {value} = evt.target
     setUserName(value.toLowerCase())
   }
@@ -37,7 +37,7 @@ function UsernameForm({onSubmitUsername}) {
         <input
           type="text"
           id="input_name"
-          onChange={handleSubmit}
+          onChange={handleChange}
           value={userName}
         />
       </div>
